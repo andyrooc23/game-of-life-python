@@ -1,6 +1,5 @@
 # Implementation for game of life by Chris Styerwalt, Andrew Cantrell, and True Sarmiento
 # Our online resources that we studied from: the geeksforgeeks.com game of life implementation
-import argparse
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.animation as animation
@@ -11,7 +10,7 @@ OFF = 0
 vals = [ON, OFF]
 
 def randomGrid(N):
-    """returns a grid of NxN random values"""
+    #returns a grid of NxN random values
     return np.random.choice(vals, N * N, p=[0.2, 0.8]).reshape(N, N)
 
 def update(frameNum, img, grid, N):
